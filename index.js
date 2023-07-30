@@ -16,6 +16,6 @@ Answers: {
     C: 'Dragon Ball Z' ,
     D: 'Re-zero'
 },
-CorrectAnswer: 'D'
+CorrectAnswer: 'A' 
 },
 ];

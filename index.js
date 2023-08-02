@@ -32,11 +32,28 @@ const myQuestions =[
     CorrectAnswer: 'A' 
     },
     ];
-    function GetAnswers(myQuestions) {
-        return Answers;
-      }
-      function BeginQuiz(myQuestions, answerForQuestions)
-      const answerForQuestions = document.getElementById("Answers");
+    // function GetAnswers(myQuestions) {
+    //     return Answers;
+    //   }
+    //   function BeginQuiz(myQuestions, answerForQuestions)
+    //   const answerForQuestions = document.getElementById("Answers");
+
+ let questionsP = document.getElementById("questions")     
+
+ questionsP.textContent = `${myQuestions[0].Question}`
+
+console.log(questionsP)
+
+//  questionsP.textContent = "hello"
+
+
+
+ //show the first question
+ //if answer choice is clicked and it's correct ....
+ //else if....
+
+ //Add event listener that shows the solution at the button with
+//with id of showSolution ... the eentlistener needs to be able to show the answer in the object
 
 // const myQuestions =[
 // {Question : "What anime is this opening from?", 

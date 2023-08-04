@@ -5,3 +5,10 @@
     background-repeat: no-repeat;
     color: pink;
 }
+
+
+#Questions {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+}

@@ -87,9 +87,9 @@ let answerQuestion = start.addEventListener("click", function() {
 answer1A.addEventListener("click", e => {
 
   if (e.target.id = "1a") {
-    {else
-
-      answer1A.style.color = "red"
+    answerID.style.color = "green"
+  }else{
+        answer1A.style.color = "red"
       answerID.style.color = "green"
     
 

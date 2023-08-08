@@ -1,7 +1,7 @@
 * {
   /* border: solid 2px whitesmoke; */
   background-image: url(https://images7.alphacoders.com/131/1318301.png);
-  background-size: 1700px 700px;
+  background-size: cover;
   background-repeat: no-repeat;
   color: pink;
 }
@@ -66,3 +66,16 @@ main {
 .imageURL{
     height: 5%;
 }
+
+
+
+/* body {
+  background-image: url(https://images7.alphacoders.com/131/1318301.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: pink;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+} */

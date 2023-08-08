@@ -1,6 +1,15 @@
-//make if statements
-//access questions and show questions div
-//Start button as click triggers function that show the first question
+
+//make instructions appear when click button
+//  alert??? 
+
+//Make README.md fit the template that's in the Widget
+
+
+
+//Fix main functionality
+//Change score total score maybe with message ???
+
+
 const myQuestions = [
   {
     Question: "What anime is this logo from?",
@@ -56,8 +65,6 @@ let scoreShow = document.getElementById("Score");
 scoreShow.innerHTML = `Score: ${score}`;
 
 let questionsP = document.getElementById("Questions");
-
-let nextButton3 = document.getElementById("next3");
 
 let answerQuestion = start.addEventListener("click", function () {
   //want questions and answers to show up in Questions div
@@ -115,9 +122,9 @@ let answerQuestion = start.addEventListener("click", function () {
       scoreShow.innerHTML = `Score: ${(score += 100)}`;
     }
   });
-  
+
   let nextButton1 = document.getElementById("next1");
-  console.log(nextButton1, "button1")
+  console.log(nextButton1, "button1");
   nextButton1.addEventListener("click", () => {
     questionsP.innerHTML = `  
     <div id="question2">${myQuestions[1].Question}</div>
@@ -132,7 +139,7 @@ let answerQuestion = start.addEventListener("click", function () {
     let answer2B = document.getElementById("choice2b");
     let answer2C = document.getElementById("choice2c");
     let answer2D = document.getElementById("choice2d");
-    
+
     answer2A.addEventListener("click", (e) => {
       if ((e.target.id = "choice2a")) {
         // score = score + 100
@@ -162,7 +169,7 @@ let answerQuestion = start.addEventListener("click", function () {
         answer2D.style.color = "red";
       }
     });
-    
+
     answer2D.addEventListener("click", (e) => {
       if ((e.target.id = "choice2d")) {
         // score = score + 100
@@ -172,67 +179,87 @@ let answerQuestion = start.addEventListener("click", function () {
         answer2D.style.color = "red";
       }
     });
-  });
 
-  let nextButton2 = document.getElementById("next2");
-  console.log(nextButton2, "button2")
-  nextButton2.addEventListener("click", () => {
+    let nextButton2;
+
+    nextButton2 = document.getElementById("next2");
+    nextButton2.addEventListener("click", (e) => {
     questionsP.innerHTML = `  
     <div id="question3">${myQuestions[2].Question}</div>
-            <div id="choice3a">${myQuestions[2].Answers.A}</div>
-            <div id="choice3b">${myQuestions[2].Answers.B}</div>
-            <div id="choice3c">${myQuestions[2].Answers.C}</div>
-            <div id="choice3d">${myQuestions[2].Answers.D}</div>
-            <button id="next3">Next</button>
-            `;
-
-    let answer3A = document.getElementById("choice3a");
-    let answer3B = document.getElementById("choice3b");
-    let answer3C = document.getElementById("choice3c");
-    let answer3D = document.getElementById("choice3d");
-
-    answer3A.addEventListener("click", (e) => {
-      if ((e.target.id = "choice3a")) {
-        // score = score + 100
-        answer3A.style.color = "red";
-        answer3B.style.color = "red";
-        answer3C.style.color = "red";
-        answer3D.style.color = "green";
-      }
-    });
-
-    answer3B.addEventListener("click", (e) => {
-      if ((e.target.id = "choice3a")) {
-        // score = score + 100
-        answer3A.style.color = "red";
-        answer3B.style.color = "red";
-        answer3C.style.color = "red";
-        answer3D.style.color = "green";
-      }
-      });
-      answer3C.addEventListener("click", (e) => {
-        if ((e.target.id = "choice3a")) {
-          // score = score + 100
-          answer3A.style.color = "red";
-          answer3B.style.color = "red";
-          answer3C.style.color = "red";
-          answer3D.style.color = "green";
-        }
-        });
-
-    answer3D.addEventListener("click", (e) => {
-      if ((e.target.id = "choice3d")) {
-        // score = score + 100
-        answer3A.style.color = "red";
-        answer3B.style.color = "red";
-        answer3C.style.color = "red";
-        answer3D.style.color = "green";
-        scoreShow.innerHTML = `Score: ${(score += 100)}`;
-      }
-    });
-
+    <div id="choice3a">${myQuestions[2].Answers.A}</div>
+    <div id="choice3b">${myQuestions[2].Answers.B}</div>
+    <div id="choice3c">${myQuestions[2].Answers.C}</div>
+    <div id="choice3d">${myQuestions[2].Answers.D}</div>
+    `;
   });
+  // });
 });
+});
+
+function thirdChoice() {
+  
+  let answer3A = document.getElementById("choice3a");
+  console.log(answer3A)
+  let answer3B = document.getElementById("choice3b");
+  let answer3C = document.getElementById("choice3c");
+  let answer3D = document.getElementById("choice3d");
+  
+  answer3A.addEventListener("click", (e) => {
+    if ((e.target.id = "choice3a")) {
+      // score = score + 100
+      answer3A.style.color = "red";
+      answer3B.style.color = "red";
+      answer3C.style.color = "red";
+      answer3D.style.color = "green";
+    }
+  });
+  
+  answer3B.addEventListener("click", (e) => {
+    if ((e.target.id = "choice3a")) {
+      // score = score + 100
+      answer3A.style.color = "red";
+      answer3B.style.color = "red";
+      answer3C.style.color = "red";
+      answer3D.style.color = "green";
+    }
+  });
+  
+  answer3C.addEventListener("click", (e) => {
+    if ((e.target.id = "choice3a")) {
+      // score = score + 100
+      answer3A.style.color = "red";
+      answer3B.style.color = "red";
+      answer3C.style.color = "red";
+      answer3D.style.color = "green";
+    }
+  });
+
+  answer3D.addEventListener("click", (e) => {
+    if ((e.target.id = "choice3d")) {
+      // score = score + 100
+      answer3A.style.color = "red";
+      answer3B.style.color = "red";
+      answer3C.style.color = "red";
+      answer3D.style.color = "green";
+      scoreShow.innerHTML = `Score: ${(score += 100)}`;
+    }
+  });
+}
+
+thirdChoice()
+// let nextButton3 = document.getElementById("next3")
+// nextButton3.addEventListener("click", () => {
+  //   questionsP.innerHTML = `
+//   <div id="question3">${myQuestions[2].Question}</div>
+//   <div id="choice3a">${myQuestions[2].Answers.A}</div>
+//   <div id="choice3b">${myQuestions[2].Answers.B}</div>
+//   <div id="choice3c">${myQuestions[2].Answers.C}</div>
+//       <div id="choice3d">${myQuestions[2].Answers.D}</div>
+//       <button id="next3">Next</button>
+//             `;
+
+// });
+
 //_____________________________________________________________
 
 // go to next question unless it's the last question

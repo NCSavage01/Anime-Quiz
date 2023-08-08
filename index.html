@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anime Quiz</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <h1>Anime Quiz</h1>
-    <div>Correct answers plus 100 points, </div>
-<button id="Start">Start</button>
-<div id="Questions">QUESTIONS<button id="seeSolution">See Solution</button><p id="questions"></p></div>
-<div id="Score"></div>
-<audio autoplay loop><source src="../Menu.wav" type="audio/wav"> </audio>
-<button type="button" onclick="document.write('Hello World')">Start</button>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="title">
+      <div id="title-word">Anime Quiz</div>
+    </div>
+    <div id="control">
+      <button id="Start">Start</button>
+      <button id="Instructions">Instructions</button>
+    </div>
+    <main>
+      <div id="Questions"></div>
+      <div id="Score">Score: </div>
+    </main>
+   
+    <!-- <button type="button" onclick="document.write('Hello World')">Start</button> -->
 
-<script src="index.js"></script> 
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
